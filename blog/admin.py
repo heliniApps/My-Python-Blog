@@ -1,8 +1,13 @@
-# Register your models here.
-
 # Super User
 # username: helini87
 # password: helloworld87
+
+# server's superuser
+# heliniK
+# helloworld87
+
+
+# Register your models here.
 
 from django.contrib import admin
 from .models import Post
