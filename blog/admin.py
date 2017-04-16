@@ -3,7 +3,7 @@
 # password: helloworld87
 
 # server's superuser
-# heliniK
+# helinik
 # helloworld87
 
 
