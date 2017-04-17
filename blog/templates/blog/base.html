@@ -12,7 +12,11 @@
   <body>
     <div class="page-header">
       <h1>
-        <a href="http://127.0.0.1:8000"> Helini's Python Blog..✍ </a>
+        <!-- URL to create new Posts -->
+        <a href="{% url 'post_new' %}" class="top-menu">
+          <span class="glyphicon glyphicon-plus"></span>
+        <a>
+        <a href="/"> Helini's Python Blog..✍ </a>
       </h1>
     </div>
 
@@ -22,51 +26,10 @@
 
           {% block content %}
           {% endblock %}
-          
+
         </div>
       </div>
     </div>
 
-
-    <!-- <div>
-      <p>published: 14-04-2017</p>
-      <h2><a href="">First Python command!</a></h2>
-      <p>After running the Python command, the prompt changed to >>>. For us this means that for now we may only use commands in the Python language. You don't have to type in >>> – Python will do that for you.
-
-If you want to exit the Python console at any point, just type exit() or use the shortcut Ctrl + Z for Windows and Ctrl + D for Mac/Linux. Then you won't see >>> any longer.
-
-For now, we don't want to exit the Python console. We want to learn more about it. Let's start with something really simple. For example, try typing some math, like 2 + 3 and hit enter.
-      <p>
-        command-line
-        >>> 2 + 3
-        5
-      </p>
-Nice! See how the answer popped out? Python knows math! You could try other commands like:
-
-      <p>
-        4 * 5
-        5 - 1
-        40 / 2
-      </p>
-To perform exponential calculation, say 2 to the power 3, we type:
-
-      <p>
-        command-line
-        >>> 2 ** 3
-        8
-      </p>
-Have fun with this for a little while and then get back here. :)
-
-As you can see, Python is a great calculator. If you're wondering what else you can do…
-      </p>
-    </div>
-    <div>
-      <p>published: 14-04-2017</p>
-      <h2><a href="">Introduction to Python</a></h2>
-      <p>Python is a very popular programming language that can be used for creating websites, games, scientific software, graphics, and much, much more.
-
-Python originated in the late 1980s and its main goal is to be readable by human beings (not only machines!). This is why it looks much simpler than other programming languages. This makes it easy to learn, but don't worry – Python is also really powerful!
-      </p>
-    </div> -->
   </body>
 </html>
