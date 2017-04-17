@@ -13,9 +13,11 @@
     <div class="page-header">
       <h1>
         <!-- URL to create new Posts -->
-        <a href="{% url 'post_new' %}" class="top-menu">
-          <span class="glyphicon glyphicon-plus"></span>
-        <a>
+        {% if user.is_authenticated %}
+          <a href="{% url 'post_new' %}" class="top-menu">
+            <span class="glyphicon glyphicon-plus"></span>
+          <a>
+        {% endif %}
         <a href="/"> Helini's Python Blog..✍ </a>
       </h1>
     </div>
